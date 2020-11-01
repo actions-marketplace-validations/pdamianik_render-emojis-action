@@ -1,12 +1,12 @@
-import { getInput, setOutput, setFailed } from '@actions/core';
+const core = require('@actions/core');
 
 try {
-    let json = JSON.parse(getInput('json'));
+    let json = JSON.parse(core.getInput('json'));
     let table = "Emoji | Emoji text\n--- | ---";
     Object.keys(json).forEach(function(key) {
         table += `${key} | \`${key}\`\n`;
     });
-    setOutput('out', table);
+    core.setOutput('out', table);
 } catch (error) {
-    setFailed(error.message);
+    core.setFailed(error.message);
 }
