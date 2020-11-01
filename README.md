@@ -1,2 +1,2 @@
-# render-json-action
+# render-emojis-action
 An action that renders json
