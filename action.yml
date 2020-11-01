@@ -1,0 +1,12 @@
+name: 'Render emojis'
+description: 'Renders all the github emojis from an json input'
+inputs:
+  json:
+    description: 'The json form of the emojis to render (from https://api.github.com/emojis)'
+    required: true
+outputs:
+  out:
+    description: 'The emojis will be outputted in a 3 column table'
+runs:
+  using: 'node12'
+  main: 'index.js'

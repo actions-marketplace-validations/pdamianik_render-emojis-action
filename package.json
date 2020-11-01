@@ -1,0 +1,24 @@
+{
+  "name": "render-json-action",
+  "version": "1.0.0",
+  "description": "An action that renders json",
+  "main": "src/index.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdamianik/render-json-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdamianik/render-json-action/issues"
+  },
+  "homepage": "https://github.com/pdamianik/render-json-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {}
+}
