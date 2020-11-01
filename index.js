@@ -1,7 +1,8 @@
 const core = require('@actions/core');
 
 try {
-    let json = JSON.parse(core.getInput('json'));
+    let json = core.getInput('json');
+    json = JSON.parse(json);
     let table = "Emoji | Emoji text\n--- | ---";
     Object.keys(json).forEach(function(key) {
         table += `${key} | \`${key}\`\n`;
